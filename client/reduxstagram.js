@@ -3,9 +3,10 @@ import {render} from 'react-dom';
 
 // import css
 import css from './styles/style.styl';
+import Main from './components/main.js';
 
 // Main render method for React component
 render(
-    <p>Hello</p>,
-    document.getElementById('root')
+  <Main />,
+  document.getElementById('root')
 );
