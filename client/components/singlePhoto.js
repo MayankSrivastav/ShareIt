@@ -1,3 +1,6 @@
+// Component for the functionality
+// of single photo display
+
 import React from 'react';
 
 const SinglePhoto = React.createClass({

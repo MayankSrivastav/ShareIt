@@ -1,3 +1,6 @@
+// Component for functionality
+// of creating the photo grid
+
 import React from 'react';
 
 const PhotoGrid = React.createClass({
