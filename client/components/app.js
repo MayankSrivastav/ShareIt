@@ -5,7 +5,7 @@ import Main from './main.js';
 
 function mapStateToProps(state) {
   return {
-    props: state.posts,
+    posts: state.posts,
     comments: state.comments
   };
 }
@@ -15,6 +15,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 // connect component to redux store
-const App = connect(mapStateToProps, mapDispatchToProps);
+const App = connect(mapStateToProps, mapDispatchToProps)(Main);
 
 export default App;
