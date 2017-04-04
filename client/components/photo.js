@@ -12,6 +12,12 @@ const Photo = React.createClass({
             <img src={post.display_src} alt={post.caption} className="grid-photo" />
           </Link>
         </div>
+        <figcaption>
+          <p>{post.caption}</p>
+          <div className="control-buttons">
+            <button className="likes">&hearts; {post.likes}</button>
+          </div>
+        </figcaption>
       </figure>
     );
   }
