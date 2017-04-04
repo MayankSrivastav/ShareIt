@@ -1,10 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 const Photo = React.createClass({
   render() {
+    const {post, ind, comment} = this.props;
+    
     return (
       <figure className="grid-figure">
-        It's a Photo
+        <div className="grid-photo-wrap">
+          <Link to={`/view/${post.code}`}>
+            {post.caption}
+          </Link>
+        </div>
       </figure>
     );
   }
