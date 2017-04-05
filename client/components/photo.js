@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 const Photo = React.createClass({
   render() {
-    const {post, ind, comments} = this.props;
+    const {post, ind, comments, increment} = this.props;
 
     return (
       <figure className="grid-figure">
@@ -15,7 +15,7 @@ const Photo = React.createClass({
         <figcaption>
           <p>{post.caption}</p>
           <div className="control-buttons">
-            <button className="likes">&hearts; {post.likes}</button>
+            <button onClick={increment.bind(null, ind)} className="likes">&hearts; {post.likes}</button>
             <Link to={`/view/${post.code}`} className="button">
               <span className="comment-count">
                 <span className="speech-bubble"></span>
