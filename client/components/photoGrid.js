@@ -12,7 +12,7 @@ const PhotoGrid = React.createClass({
           ...this.props} keys={ind} ind={ind} post={post} />)}
       </div>
     );
-  }  
+  }
 });
 
 export default PhotoGrid;
