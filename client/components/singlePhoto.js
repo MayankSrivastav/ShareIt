@@ -1,13 +1,19 @@
 // Component for the functionality
 // of single photo display
-
+import Photo from './photo.js';
 import React from 'react';
+import Comments from './comments.js';
 
 const SinglePhoto = React.createClass({
   render() {
+    const ind = this.props.posts.findIndex((post) =>
+                            post.code === this.props.params.postId);
+    const post = this.props.posts[ind];
+
     return (
       <div className="single-photo">
-        I'm a single photo
+        <Photo ind={ind} post={post} {...this.props}/>
+        <Comments />
       </div>
     );
   }
