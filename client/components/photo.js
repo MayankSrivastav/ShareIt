@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 const Photo = React.createClass({
   render() {
     const {post, ind, comments} = this.props;
-    
+
     return (
       <figure className="grid-figure">
         <div className="grid-photo-wrap">
