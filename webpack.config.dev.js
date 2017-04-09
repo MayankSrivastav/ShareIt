@@ -1,3 +1,5 @@
+// Dev version of webpack config
+
 var path = require('path');
 var webpack = require('webpack');
 
